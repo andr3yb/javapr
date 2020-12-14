@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+
+        Rect rect1 = new Rect();
+        rect1.width = a;
+        rect1.height = b;
+
+        Rect rect2 = new Rect();
+        rect2.width = c;
+        rect2.height = c;
+
+        double p1 = rect1.getPerimeter();
+        double s1 = rect1.getArea();
+
+        double s2 = rect2.getArea();
+        double p2 = rect2.getPerimeter();
+
+        
+    }
+}
