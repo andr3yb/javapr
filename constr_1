@@ -1,0 +1,42 @@
+public class Rect{
+
+    double w;
+    double h;
+
+    @Override
+    public String toString() {
+        return "Rect{" +
+                "width=" + w +
+                ",height=" + h +
+                '}';
+    }
+    Rect() {
+        w = 1;
+        h = 1;
+    }
+    Rect(double a) {
+        w = a;
+        h = a;
+    }
+    public Rect(double w, double h) {
+        this.w = w;
+        this.h = h;
+    }
+    boolean isSquare() {
+        if (w == h) return true;
+        else return false;
+    }
+    double getArea() {
+        return w * h;
+    }
+    double getPerimeter() {
+        return 2 * (w + h);
+    }
+    Rect scale(double d) {
+        return new Rect(this.w*d,this.h*d);
+    }
+    Rect scale(double w,double h){
+        return new Rect(this.w*w,this.h*h);
+    }
+
+}
