@@ -1,0 +1,32 @@
+public class Frac {
+
+    private int numerator;
+    private int denominator;
+
+    Frac() {
+        numerator = 0;
+        denominator = 1;
+    }
+
+    public Frac(int a) {
+        numerator = a;
+        denominator = 1;
+    }
+
+    private Frac(int a, int b) {
+        numerator = a;
+        denominator = b;
+    }
+
+    @Override
+    public String toString() {
+        return numerator + "/" + denominator;
+    }
+
+    // protected Frac sum(Frac a) {}
+    // public Frac sum(int a) {}
+
+    private Frac mult(int a) {
+        Frac a = 
+    }
+}
